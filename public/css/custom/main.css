@@ -1,0 +1,104 @@
+:root {
+  /* Colors variable */
+  --black: rgb(0, 0, 0);
+  --darker-blue: rgb(5, 5, 29);
+  --dark-blue: rgb(12, 12, 70);
+  --light-blue: rgb(13, 100, 176);
+  --lighter-blue: rgb(180, 220, 255);
+  --gray: rgb(167, 167, 167);
+  --light-gray: rgb(210, 210, 210);
+  --lighter-gray: rgb(243, 243, 243);
+  --off-white: rgb(252, 252, 252);
+  --white: rgb(255, 255, 255);
+
+  --primary-color: #090909;
+  --secondary-color: #f8ce44;
+  /* font family variable */
+
+  --font-1: ;
+  --font-2: ;
+  --font-3: ;
+  --font-body: "Inter", sans-serif;
+
+  /* UI element  variable */
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--dark-blue);
+}
+
+body {
+  background-color: #fff;
+  font-family: var(--font-body);
+}
+
+/* ============ Typography Classes ============ */
+.wm-h-1 {
+  font-size: 150px;
+  font-weight: 700;
+  line-height: 190px;
+}
+.wm-h-2 {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 90px;
+}
+.wm-h-3 {
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 78px;
+}
+.wm-h-4 {
+}
+.wm-text-xxl {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 54px;
+}
+.wm-text-xl {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.wm-text-lg {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+}
+.wm-text-md {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+.wm-text-sm {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.wm-text-xs {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.wm-text-right {
+  text-align: right;
+}
+.wm-text-center {
+  text-align: center;
+}
+.wm-text-justify {
+  text-align: justify;
+}
+
+/* ======= Spacing classes   ====== */
+/* ======= component based classes   ====== */

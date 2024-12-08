@@ -2,7 +2,7 @@
   /* Colors variable */
   --black: rgb(0, 0, 0);
   --darker-blue: rgb(5, 5, 29);
-  --dark-blue: rgb(12, 12, 70);
+  --dark-blue: #253993;
   --light-blue: rgb(13, 100, 176);
   --lighter-blue: rgb(180, 220, 255);
   --gray: rgb(167, 167, 167);
@@ -26,20 +26,31 @@
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
   box-sizing: border-box;
+  /* border: 1px solid white; */
 }
 
 a {
-  color: var(--dark-blue);
+  color: var(--white) !important;
+  text-decoration: none !important;
 }
 
 body {
   background-color: #fff;
   font-family: var(--font-body);
 }
-
+.container {
+  max-width:1200px !important;
+  margin: 0px auto !important;
+  padding: 0px !important;
+}
+ul {
+  list-style: none; 
+  padding: 0 !important;       
+  margin: 0 !important; 
+}
 /* ============ Typography Classes ============ */
 .wm-h-1 {
   font-size: 150px;
@@ -80,7 +91,7 @@ body {
   line-height: 28px;
 }
 .wm-text-sm {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
 }
@@ -100,5 +111,41 @@ body {
   text-align: justify;
 }
 
+
 /* ======= Spacing classes   ====== */
+.wm-gap-24{
+  gap: 24px;
+}
+/* animation */
+.hover-underline {
+  position: relative;
+  display: inline-block; /* Ensure proper width for inline text */
+}
+
+.hover-underline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0; 
+  width: 0;
+  height: 1px; 
+  background-color: white; 
+  transition: width 0.3s ease; 
+}
+
+.hover-underline:hover::before {
+  width: 100%; 
+}
 /* ======= component based classes   ====== */
+.navbar {
+  background: var(--dark-blue);
+  padding: 16px 0px !important;
+}
+.nav-ul{
+  color: var(--white);
+  letter-spacing: -0.16px;
+}
+.nav-number{
+font-weight: 600;
+text-underline-offset: 19.5%; /* 3.12px */
+}

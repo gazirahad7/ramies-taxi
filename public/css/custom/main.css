@@ -229,6 +229,18 @@ ul {
   background: var(--dark-blue);
   padding: 16px 0px !important;
   border: none !important;
+  height: 73px;
+  width: 100%;
+}
+.test{
+  position: fixed !important; /* Makes it sticky */
+  top: 0;
+  z-index: 1000; 
+   background: var(--dark-blue);
+   height: 73px;
+   width: 100%;
+   padding: 16px 120px !important;
+
 }
 .nav-ul{
   color: var(--white);
@@ -245,7 +257,17 @@ text-underline-offset: 19.5%; /* 3.12px */
 }
 .hero-section{
   padding: 121px 0px !important;
-backdrop-filter: blur(2px);
+  position: relative;
+  z-index: 1;
+}
+.hero-section::after{
+  content: '';
+  position: absolute;
+  backdrop-filter: blur(2px);
+  top: 0px;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
 }
 .hero-top-title {
   color: var(--white);
@@ -363,12 +385,11 @@ color: var(--darkar-gray);
 }
 .card-img {
   height: 284px;
-  width: 384px;
+  width: 100%;
   display: block;
   object-fit: cover;
-  /* clip-path: ellipse(67% 67% at 50% 28%); More rounded on both top and bottom */
+  clip-path: ellipse(67% 67% at 50% 28%); 
 }
-
 
 .button-secondary {
   background-color: var(--dark-blue);
@@ -377,6 +398,17 @@ color: var(--darkar-gray);
 /* choose us section */
 .choose-us-section{
   padding: 60px 0px !important;
+  position: relative;
+  z-index: 1;
+}
+.choose-us-section::after{
+  content: '';
+  position: absolute;
+  backdrop-filter: blur(5px);
+  top: 0px;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
 }
 .choose-us-title{
   color: var(--white);
@@ -515,7 +547,17 @@ margin-bottom: 10px !important;
 
 .advance-section{
   padding: 70px 0px !important;
-  background: radial-gradient(50% 59.59% at 50% 50%, rgba(0, 5, 26, 0.35) 0%, rgba(0, 5, 26, 0.35) 100%), lightgray -13.333px -307.157px / 101.042% 349.76% no-repeat;
+  position: relative;
+  z-index: 1;
+}
+.advance-section::after{
+  content: '';
+  position: absolute;
+  backdrop-filter: blur(7.5px);
+  top: 0px;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
 }
 .advance-section-dsc{
   margin-bottom: 40px !important;
@@ -572,3 +614,4 @@ background: var(--lighter-gray);
   color: var(--white);
   opacity: 0.8;
 }
+

@@ -9,9 +9,17 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="./public/css/lib/bootstrap-5-2-3.min.css" />
     <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header>
@@ -29,14 +37,586 @@
             <li class="hover-underline"><a href="">Case Study</a></li>
           </ul>
           <div class="d-flex align-items-center gap-1">
-            <img src="./public/icons/telephone.svg" alt="telephone">
-            <p class="fst-italic text-decoration-underline text-white nav-number">+900 4440053546</p>
+            <img src="./public/icons/telephone.svg" alt="telephone" />
+            <p
+              class="fst-italic text-decoration-underline text-white nav-number"
+            >
+              +900 4440053546
+            </p>
           </div>
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <!-- hero section -->
+      <section
+        style="
+          background-image: linear-gradient(
+              155deg,
+              rgba(21, 27, 54, 0.52) 21.59%,
+              rgba(8, 17, 60, 0) 121.04%
+            ),
+            url('./public/image/hero.png');
+        "
+        class="hero-section wm-background-image wm-text-center d-flex justify-content-center"
+      >
+        <div class="wm-text-center hero-wrapper">
+          <p
+            class="mb-3 hero-top-title wm-text-sm d-flex align-items-center gap-2 justify-content-center"
+          >
+            <span class="gradient-line-left"></span> Welcome to Ramies Taxis
+            <span class="gradient-line-right"></span>
+          </p>
+
+          <h1 class="hero-title wm-h-1">
+            Where Every Ride is
+            <br />
+            <span class="hero-title-span">an Experience!</span>
+          </h1>
+          <p class="hero-dsc mt-4 mb-4 wm-text-normal">
+            Proud to be the most trusted Malvern taxi company that sets the
+            standards with our convenient, reliable, and safe taxi services.
+            With a sizable fleet of well-maintained taxis, we provide
+            comprehensive and complete transport solutions that no other Malvern
+            taxi service can offer.
+          </p>
+          <div class="d-flex align-items-center justify-content-center">
+            <button
+              type="button"
+              class="button-primary wm-text-normal d-flex align-items-center justify-content-center gap-1"
+            >
+              <img src="./public/icons/calender.svg" alt="calender" /> Book With
+              Ramies Taxi
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Choose taxi section/slider section -->
+      <section class="container choose-taxi-section">
+        <!-- heading -->
+        <div
+          class="d-flex justify-content-center align-items-center flex-column"
+        >
+          <h2 class="wm-text-center choose-title wm-h-2 mb-3">
+            Choose Taxi to Ride
+          </h2>
+          <p class="wm-text-center wm-text-sm choose-dsc">
+            Proud to be the most trusted Malvern taxi company that sets the
+            standards with our convenient, reliable, and safe taxi services.
+          </p>
+          <!-- slider -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="car-card d-flex flex-column">
+                  <div class="wm-text-center">
+                    <img
+                      class="card-img"
+                      src="./public/image/car.jpg"
+                      alt="car"
+                    />
+                  </div>
+                  <div class="d-flex flex-column wm-gap-32 card-bottom">
+                    <div>
+                      <h3 class="wm-h-3 card-title mb-1">Hyundai 2022</h3>
+                      <p class="card-dsc">CHICAGO</p>
+                    </div>
+                    <div class="d-flex flex-column gap-3">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <p class="card-details wm-text-normal">
+                          Initial Charge:
+                        </p>
+                        <p class="card-details wm-text-normal">$2.50</p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <p class="card-details wm-text-normal">Per Mile/KM:</p>
+                        <p class="card-details wm-text-normal">$4.20</p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <p class="card-details wm-text-normal">
+                          Per Stopped Trafic:
+                        </p>
+                        <p class="card-details wm-text-normal">$1.50</p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <p class="card-details wm-text-normal">Passengers:</p>
+                        <p class="card-details wm-text-normal">4 Person</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-center"
+                    >
+                      <button
+                        type="button"
+                        class="button-primary button-secondary wm-text-normal d-flex align-items-center justify-content-center gap-1"
+                      >
+                        <img src="./public/icons/calender.svg" alt="calender" />
+                        Book Taxi Now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="car-card d-flex flex-column">
+                  <div class="wm-text-center">
+                    <img
+                      class="card-img"
+                      src="./public/image/car.jpg"
+                      alt="car"
+                    />
+                  </div>
+                  <div class="d-flex flex-column wm-gap-32 card-bottom">
+                    <div>
+                      <h3 class="wm-h-3 card-title mb-1">Hyundai 2022</h3>
+                      <p class="card-dsc">CHICAGO</p>
+                    </div>
+                    <div class="d-flex flex-column gap-3">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <p class="card-details wm-text-normal">
+                          Initial Charge:
+                        </p>
+                        <p class="card-details wm-text-normal">$2.50</p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <p class="card-details wm-text-normal">Per Mile/KM:</p>
+                        <p class="card-details wm-text-normal">$4.20</p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <p class="card-details wm-text-normal">
+                          Per Stopped Trafic:
+                        </p>
+                        <p class="card-details wm-text-normal">$1.50</p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <p class="card-details wm-text-normal">Passengers:</p>
+                        <p class="card-details wm-text-normal">4 Person</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-center"
+                    >
+                      <button
+                        type="button"
+                        class="button-primary button-secondary wm-text-normal d-flex align-items-center justify-content-center gap-1"
+                      >
+                        <img src="./public/icons/calender.svg" alt="calender" />
+                        Book Taxi Now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="car-card d-flex flex-column">
+                  <div class="wm-text-center">
+                    <img
+                      class="card-img"
+                      src="./public/image/car.jpg"
+                      alt="car"
+                    />
+                  </div>
+                  <div class="d-flex flex-column wm-gap-32 card-bottom">
+                    <div>
+                      <h3 class="wm-h-3 card-title mb-1">Hyundai 2022</h3>
+                      <p class="card-dsc">CHICAGO</p>
+                    </div>
+                    <div class="d-flex flex-column gap-3">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <p class="card-details wm-text-normal">
+                          Initial Charge:
+                        </p>
+                        <p class="card-details wm-text-normal">$2.50</p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <p class="card-details wm-text-normal">Per Mile/KM:</p>
+                        <p class="card-details wm-text-normal">$4.20</p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <p class="card-details wm-text-normal">
+                          Per Stopped Trafic:
+                        </p>
+                        <p class="card-details wm-text-normal">$1.50</p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <p class="card-details wm-text-normal">Passengers:</p>
+                        <p class="card-details wm-text-normal">4 Person</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-center"
+                    >
+                      <button
+                        type="button"
+                        class="button-primary button-secondary wm-text-normal d-flex align-items-center justify-content-center gap-1"
+                      >
+                        <img src="./public/icons/calender.svg" alt="calender" />
+                        Book Taxi Now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="car-card d-flex flex-column">
+                  <div class="wm-text-center">
+                    <img
+                      class="card-img"
+                      src="./public/image/car.jpg"
+                      alt="car"
+                    />
+                  </div>
+                  <div class="d-flex flex-column wm-gap-32 card-bottom">
+                    <div>
+                      <h3 class="wm-h-3 card-title mb-1">Hyundai 2022</h3>
+                      <p class="card-dsc">CHICAGO</p>
+                    </div>
+                    <div class="d-flex flex-column gap-3">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <p class="card-details wm-text-normal">
+                          Initial Charge:
+                        </p>
+                        <p class="card-details wm-text-normal">$2.50</p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <p class="card-details wm-text-normal">Per Mile/KM:</p>
+                        <p class="card-details wm-text-normal">$4.20</p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <p class="card-details wm-text-normal">
+                          Per Stopped Trafic:
+                        </p>
+                        <p class="card-details wm-text-normal">$1.50</p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <p class="card-details wm-text-normal">Passengers:</p>
+                        <p class="card-details wm-text-normal">4 Person</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-center"
+                    >
+                      <button
+                        type="button"
+                        class="button-primary button-secondary wm-text-normal d-flex align-items-center justify-content-center gap-1"
+                      >
+                        <img src="./public/icons/calender.svg" alt="calender" />
+                        Book Taxi Now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="car-card d-flex flex-column">
+                  <div class="wm-text-center">
+                    <img
+                      class="card-img"
+                      src="./public/image/car.jpg"
+                      alt="car"
+                    />
+                  </div>
+                  <div class="d-flex flex-column wm-gap-32 card-bottom">
+                    <div>
+                      <h3 class="wm-h-3 card-title mb-1">Hyundai 2022</h3>
+                      <p class="card-dsc">CHICAGO</p>
+                    </div>
+                    <div class="d-flex flex-column gap-3">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <p class="card-details wm-text-normal">
+                          Initial Charge:
+                        </p>
+                        <p class="card-details wm-text-normal">$2.50</p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <p class="card-details wm-text-normal">Per Mile/KM:</p>
+                        <p class="card-details wm-text-normal">$4.20</p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <p class="card-details wm-text-normal">
+                          Per Stopped Trafic:
+                        </p>
+                        <p class="card-details wm-text-normal">$1.50</p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <p class="card-details wm-text-normal">Passengers:</p>
+                        <p class="card-details wm-text-normal">4 Person</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-center"
+                    >
+                      <button
+                        type="button"
+                        class="button-primary button-secondary wm-text-normal d-flex align-items-center justify-content-center gap-1"
+                      >
+                        <img src="./public/icons/calender.svg" alt="calender" />
+                        Book Taxi Now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="car-card d-flex flex-column">
+                  <div class="wm-text-center">
+                    <img
+                      class="card-img"
+                      src="./public/image/car.jpg"
+                      alt="car"
+                    />
+                  </div>
+                  <div class="d-flex flex-column wm-gap-32 card-bottom">
+                    <div>
+                      <h3 class="wm-h-3 card-title mb-1">Hyundai 2022</h3>
+                      <p class="card-dsc">CHICAGO</p>
+                    </div>
+                    <div class="d-flex flex-column gap-3">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <p class="card-details wm-text-normal">
+                          Initial Charge:
+                        </p>
+                        <p class="card-details wm-text-normal">$2.50</p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <p class="card-details wm-text-normal">Per Mile/KM:</p>
+                        <p class="card-details wm-text-normal">$4.20</p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <p class="card-details wm-text-normal">
+                          Per Stopped Trafic:
+                        </p>
+                        <p class="card-details wm-text-normal">$1.50</p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <p class="card-details wm-text-normal">Passengers:</p>
+                        <p class="card-details wm-text-normal">4 Person</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-center"
+                    >
+                      <button
+                        type="button"
+                        class="button-primary button-secondary wm-text-normal d-flex align-items-center justify-content-center gap-1"
+                      >
+                        <img src="./public/icons/calender.svg" alt="calender" />
+                        Book Taxi Now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="car-card d-flex flex-column">
+                  <div class="wm-text-center">
+                    <img
+                      class="card-img"
+                      src="./public/image/car.jpg"
+                      alt="car"
+                    />
+                  </div>
+                  <div class="d-flex flex-column wm-gap-32 card-bottom">
+                    <div>
+                      <h3 class="wm-h-3 card-title mb-1">Hyundai 2022</h3>
+                      <p class="card-dsc">CHICAGO</p>
+                    </div>
+                    <div class="d-flex flex-column gap-3">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <p class="card-details wm-text-normal">
+                          Initial Charge:
+                        </p>
+                        <p class="card-details wm-text-normal">$2.50</p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <p class="card-details wm-text-normal">Per Mile/KM:</p>
+                        <p class="card-details wm-text-normal">$4.20</p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <p class="card-details wm-text-normal">
+                          Per Stopped Trafic:
+                        </p>
+                        <p class="card-details wm-text-normal">$1.50</p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <p class="card-details wm-text-normal">Passengers:</p>
+                        <p class="card-details wm-text-normal">4 Person</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-center"
+                    >
+                      <button
+                        type="button"
+                        class="button-primary button-secondary wm-text-normal d-flex align-items-center justify-content-center gap-1"
+                      >
+                        <img src="./public/icons/calender.svg" alt="calender" />
+                        Book Taxi Now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="car-card d-flex flex-column">
+                  <div class="wm-text-center">
+                    <img
+                      class="card-img"
+                      src="./public/image/car.jpg"
+                      alt="car"
+                    />
+                  </div>
+                  <div class="d-flex flex-column wm-gap-32 card-bottom">
+                    <div>
+                      <h3 class="wm-h-3 card-title mb-1">Hyundai 2022</h3>
+                      <p class="card-dsc">CHICAGO</p>
+                    </div>
+                    <div class="d-flex flex-column gap-3">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <p class="card-details wm-text-normal">
+                          Initial Charge:
+                        </p>
+                        <p class="card-details wm-text-normal">$2.50</p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <p class="card-details wm-text-normal">Per Mile/KM:</p>
+                        <p class="card-details wm-text-normal">$4.20</p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <p class="card-details wm-text-normal">
+                          Per Stopped Trafic:
+                        </p>
+                        <p class="card-details wm-text-normal">$1.50</p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <p class="card-details wm-text-normal">Passengers:</p>
+                        <p class="card-details wm-text-normal">4 Person</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-center"
+                    >
+                      <button
+                        type="button"
+                        class="button-primary button-secondary wm-text-normal d-flex align-items-center justify-content-center gap-1"
+                      >
+                        <img src="./public/icons/calender.svg" alt="calender" />
+                        Book Taxi Now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- choose us section -->
+      <section
+        style="
+          background-image: linear-gradient(
+              155deg,
+              #00051a 21.44%,
+              rgba(0, 5, 27, 0) 121.17%
+            ),
+            url('./public/image/choose\ us.jpg');
+        "
+        class="choose-us-section wm-background-image d-flex justify-content-center"
+      >
+        <div class="container d-flex justify-content-center align-items-center flex-column">
+          <h2 class="wm-text-center choose-us-title wm-h-2 mb-3">
+            Why Choose us
+          </h2>
+          <p class="wm-text-center wm-text-sm choose-us-dsc">
+            Proud to be the most trusted Malvern taxi company that sets the
+            standards with our convenient, reliable, and safe taxi services.
+          </p>
+          <!-- choose us card -->
+          <div class="row">
+                <div class="choose-us-card">
+
+                </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
     <script src="./public/css/lib/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>

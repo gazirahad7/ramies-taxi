@@ -1,13 +1,15 @@
 :root {
   /* Colors variable */
   --black: rgb(0, 0, 0);
-  --darker-blue: rgb(5, 5, 29);
+  --light-black:#2C2C2C;
+  --darker-blue:  #020E28;
   --dark-blue: #253993;
-  --light-blue: rgb(13, 100, 176);
+  --light-blue: #5170FF;
   --lighter-blue: rgb(180, 220, 255);
-  --gray: rgb(167, 167, 167);
+  --darkar-gray:#686868;
+  --gray: #D7D8D9;
   --light-gray: rgb(210, 210, 210);
-  --lighter-gray: rgb(243, 243, 243);
+  --lighter-gray: #F4F5F8;
   --off-white: rgb(252, 252, 252);
   --white: rgb(255, 255, 255);
 
@@ -15,7 +17,7 @@
   --secondary-color: #f8ce44;
   /* font family variable */
 
-  --font-1: ;
+  --font-1: "Inter Display";
   --font-2: ;
   --font-3: ;
   --font-body: "Inter", sans-serif;
@@ -38,7 +40,7 @@ a {
 }
 
 body {
-  background-color: #fff;
+  background-color: var(--lighter-gray);
   font-family: var(--font-body);
 }
 .container {
@@ -53,19 +55,19 @@ ul {
 }
 /* ============ Typography Classes ============ */
 .wm-h-1 {
-  font-size: 150px;
-  font-weight: 700;
-  line-height: 190px;
+  font-size: 58px;
+  font-weight: 600;
+  line-height: 66px;
 }
 .wm-h-2 {
-  font-weight: 700;
-  font-size: 72px;
-  line-height: 90px;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
 }
 .wm-h-3 {
-  font-weight: 500;
-  font-size: 60px;
-  line-height: 78px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height:48px;
 }
 .wm-h-4 {
 }
@@ -90,6 +92,11 @@ ul {
   font-size: 18px;
   line-height: 28px;
 }
+.wm-text-normal{
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+}
 .wm-text-sm {
   font-weight: 400;
   font-size: 16px;
@@ -111,17 +118,24 @@ ul {
   text-align: justify;
 }
 
-
+/* global classes */
+.wm-background-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /* ======= Spacing classes   ====== */
 .wm-gap-24{
   gap: 24px;
 }
-/* animation */
+.wm-gap-32{
+  gap: 32px;
+}
+/* animation classes */
 .hover-underline {
   position: relative;
   display: inline-block; /* Ensure proper width for inline text */
 }
-
 .hover-underline::before {
   content: '';
   position: absolute;
@@ -136,16 +150,230 @@ ul {
 .hover-underline:hover::before {
   width: 100%; 
 }
+
+.gradient-line-left {
+  position: relative;
+  width: 30px; /* Match the SVG width */
+  height: 9px;  /* Match the SVG height */
+}
+
+.gradient-line-left::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%; /* Full width for the gradient */
+  height: 2px; /* Thickness of the line */
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  transform: translateY(-50%); /* Vertically center the line */
+  z-index: 1;
+}
+
+.gradient-line-left::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 8px; /* Circle width */
+  height: 8px; /* Circle height */
+  background: white;
+  border-radius: 50%; /* Make it circular */
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.gradient-line-right {
+  position: relative;
+  width: 30px; 
+  height: 9px;  
+}
+
+.gradient-line-right::before {
+  content: '';
+  position: absolute;
+  top: 50%; 
+  left: 0;
+  width: 100%; 
+  height: 2px; 
+  background: linear-gradient(to left, white 0%, rgba(255, 255, 255, 0) 100%);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.gradient-line-right::after {
+  content: '';
+  position: absolute;
+  top: 50%; 
+  right: 0; 
+  width: 8px; 
+  height: 8px; 
+  background: white;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+
 /* ======= component based classes   ====== */
+/* navbar done */
 .navbar {
   background: var(--dark-blue);
   padding: 16px 0px !important;
+  border: none !important;
 }
 .nav-ul{
   color: var(--white);
   letter-spacing: -0.16px;
 }
 .nav-number{
+  color: var(--white);
 font-weight: 600;
 text-underline-offset: 19.5%; /* 3.12px */
+}
+/* hero section */
+.hero-wrapper{
+  max-width: 578px;
+}
+.hero-section{
+  padding: 121px 0px !important;
+backdrop-filter: blur(2px);
+}
+.hero-top-title {
+  color: var(--white);
+  font-weight: 500 !important;
+  font-family: var(--font-1);
+}
+.hero-title{
+  color: var(--white);
+  letter-spacing: -1.16px;
+
+}
+.hero-title-span {
+  color: var(--light-blue);
+  font-style: italic;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title-span::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  width: 105%;
+  height: 100%;
+  background-color: white;
+  border-radius: 5px;
+  z-index: -1; 
+}
+
+.hero-title-span::before {
+  left: -10px;
+  transform: skewX(-15deg); 
+}
+
+.hero-dsc{
+  letter-spacing: -0.17px;
+  color: var(--gray);
+}
+
+.button-primary{
+  padding: 14px 24px !important;
+  color: var(--white);
+  font-weight: 500 !important;
+  letter-spacing: -0.17px;
+  background-color: var(--light-blue);
+  border: none;
+  border-radius: 100px;
+}
+
+.choose-taxi-section{
+  padding: 100px 0px !important;
+}
+
+.choose-title{
+  letter-spacing: -0.8px;
+  color: var(--darker-blue);
+}
+.choose-dsc{
+  margin-bottom: 40px !important;
+  max-width: 505px;
+  color: var(--light-black);
+}
+/* swiper */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 24px !important;
+}
+
+.swiper-pagination-bullet {
+  margin: 0 4px !important;
+}
+.swiper-pagination-bullet-active{
+  background: var(--dark-blue) !important; 
+}
+
+.swiper-slide img {
+  display: block;
+  object-fit: cover;
+}
+
+/* card */
+.car-card {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+background: #FFF;
+  gap: 40px;
+  padding-bottom: 40px !important;
+}
+.card-title{
+  color: var(--darker-blue);
+}
+.card-dsc{
+  font-size: 15px;
+font-weight: 600;
+letter-spacing: -0.3px;
+color: var(--darkar-gray);
+}
+.card-details{
+  font-weight: 500 !important;
+  color: var(--darkar-gray);
+  letter-spacing: -0.34px;
+}
+.card-bottom{
+  margin: 0px 40px !important;
+}
+.card-img {
+  height: 284px;
+  width: 384px;
+  display: block;
+  object-fit: cover;
+  /* clip-path: ellipse(67% 67% at 50% 28%); More rounded on both top and bottom */
+}
+
+
+.button-secondary {
+  background-color: var(--dark-blue);
+}
+
+/* choose us section */
+.choose-us-section{
+  padding: 60px 0px !important;
+}
+.choose-us-title{
+  color: var(--white);
+  letter-spacing: -0.8px;
+}
+.choose-us-dsc{
+  margin-bottom: 40px !important;
+  max-width: 505px;
+  color: var(--white);
 }

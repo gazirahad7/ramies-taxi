@@ -487,13 +487,36 @@ line-height: 24px;
 .footer-span{
   display: inline;
 }
+.hero-wrapper {
+  max-width: 578px !important;
+}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up)  */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  body {
+  /* body {
     background-color: yellow;
+  } */
+  .container {
+    max-width: 91.5% !important;
   }
+  .wm-responsive-gap{
+    gap: 96px !important;
+  }
+  .wm-gap-130{
+    gap: 100px;
+  }
+  .footer-span{
+    display: inline;
+  }
+  .wm-text-sm {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+}
+.hero-wrapper {
+  max-width: 578px !important;
+}
 }
 
 /* 1200px and up default value   */

@@ -508,7 +508,7 @@ color: var(--darkar-gray);
   padding: 20px 0px 20px 20px !important;
   border-radius: 3px;
   overflow: hidden; 
-  width: 44.5%;
+  width: 44.5% !important;
 }
 .discover-img-container-bottom {
   padding: 20px 20px 20px 0px !important;
@@ -535,7 +535,7 @@ color: var(--darkar-gray);
   z-index: 1; 
 }
 .discover-left{
-  width: 52%;
+  width: 51% !important;
 }
 
 .discover-img {

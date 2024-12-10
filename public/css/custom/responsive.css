@@ -19,7 +19,6 @@
    /* global classes */
    .container {
     max-width: 91.5% !important;
-
   }
   .wm-responsive-block{
     display: flex !important;
@@ -34,6 +33,10 @@
   }
   .wm-h-2{
     font-size: 20px;
+    line-height: normal;
+  }
+  .wm-h-3{
+    font-size: 18px;
     line-height: normal;
   }
   .wm-text-sm{
@@ -80,6 +83,19 @@
  .choose-dsc {
   max-width: 277px;
  }
+ .car-card{
+  gap: 32px;
+ }
+ .card-dsc{
+  font-size: 13.398px;
+ }
+ .card-details {
+  font-size: 14px;
+ }
+ .button-secondary{
+  padding: 8px 22px !important;
+ }
+ /* foooter */
  .footer{
   padding: 40px 0px 20px 0px !important;
  }
@@ -123,6 +139,31 @@
   font-size: 14px;
 font-weight: 400;
 line-height: 24px;
+}
+.choose-us-card-icon{
+  padding: 16px !important;
+}
+.choose-us-card{
+  gap: 12px;
+}
+.responsive-choose-gap{
+  gap: 26px;
+}
+.choose-us-card-title{
+  margin-bottom: 8px !important;
+}
+.choose-us-card-dsc{
+  font-size: 14px;
+  line-height: 18px;
+}
+.discover-left{
+  width: 100% !important;
+}
+.discover-img-container {
+  width: 100% !important;
+}
+.discover-img{
+  min-height: 335px;
 }
 }
 

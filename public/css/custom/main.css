@@ -637,8 +637,8 @@ background: var(--lighter-gray);
 }
 .social-icon-two{
   padding: 16px 21px 15px 21px !important;
-  border: none !important;
-  background: var(--blue);
+  background: transparent;
+  border: 2px solid var(--lightest-gray);
   border-radius: 50%;
 }
 .social-icon-three{

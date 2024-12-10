@@ -467,7 +467,7 @@ color: var(--darkar-gray);
   background-color: var(--dark-blue);
   position: relative;
 }
-.button-secondary::before{
+/* .button-secondary::before{
   content: "";
   position: absolute;
   top: var(--y);
@@ -483,7 +483,7 @@ color: var(--darkar-gray);
  width: 1000px;
  height: 1000px;
  color: var(--light-blue) !important;
-}
+} */
 
 /* choose us section */
 .choose-us-section{

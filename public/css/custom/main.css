@@ -660,4 +660,6 @@ background: var(--lighter-gray);
   color: var(--white);
   opacity: 0.8;
 }
-
+.footer-span{
+  display: block;
+}

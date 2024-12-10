@@ -118,17 +118,15 @@
 .footer-span{
   display: inline;
 }
-.social-icon-one{
-  padding: 9px 9px 9px 9px !important;
+.social-icon{
+height: 40px;
+width: 40px;
+}
+.social-icon-img{
+  width: 17px;
+  height: 17px;
+}
 
-}
-.social-icon-two{
-  padding: 9px 14.5px 9.6px 13.5px !important;
-
-}
-.social-icon-three{
-  padding: 8.03px !important;
-}
 .wm-gap-130{
   gap: 24px;
 }

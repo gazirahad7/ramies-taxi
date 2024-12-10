@@ -629,20 +629,9 @@ background: var(--lighter-gray);
   margin: 10px 0px 43px 0px !important;
   color: var(--white); 
 }
-.social-icon-one{
-  padding: 13px 15px 17px 17px !important;
-  border-radius: 50%;
-  border: 2px solid var(--lightest-gray);
-  background: transparent;
-}
-.social-icon-two{
-  padding: 16px 21px 15px 21px !important;
-  background: transparent;
-  border: 2px solid var(--lightest-gray);
-  border-radius: 50%;
-}
-.social-icon-three{
-  padding: 13.62px !important;
+.social-icon{
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
   border: 2px solid var(--lightest-gray);
   background: transparent;

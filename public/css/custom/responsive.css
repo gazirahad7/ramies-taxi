@@ -57,11 +57,6 @@
 
 /* ======= Responsive CSS   ====== */
 
-
-@media only screen and (max-width: 400px) {
-  
-}
-
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {
@@ -131,6 +126,120 @@
   }
   /* Gallery style End  */
 
+  /* Testimonials style start  */
+  .testimonials-top-content h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .testimonials-top-content p {
+    font-size: 12px;
+    line-height: 15.5px;
+}
+.testimonials-card-content h4 {
+  font-size: 18px;
+  line-height: 22px;
+}
+.testimonials-card-content p {
+  font-size: 14px;
+  line-height: 18px;
+}
+  /* Testimonials style End  */
+
+  /* About us Style Start  */
+  .about-us-wrapper, .explore-malvern-wrapper {
+    flex-direction: column;
+    gap: 24px;
+    padding: 40px !important;
+}
+.about-us-right-content {
+  padding-right: 0 !important;
+}
+  .about-title h5, .explore-malvern-title h5 {
+    font-size: 9px;
+    line-height: 11px;
+    margin-left: 30px !important;
+  }
+  .about-main-title, .explore-malvern-main-title {
+    font-size: 20px;
+    line-height: 24px;
+}
+.about-desc, .explore-malvern-desc {
+  font-size: 12px;
+  line-height: 15.5px;
+}
+.button-primary {
+  padding: 8px 22px !important;
+  font-size: 12px;
+  line-height: 16px;
+}
+.about-title-span1::before, .explore-malvern-title-span1::before {
+  left: -30px;
+    width: 4px;
+    height: 4px;
+}
+.about-title-span1::after, .explore-malvern-title-span1::after {
+  left: -30px;
+    width: 20px;
+    height: 1px;
+}
+.about-title-span2::before, .explore-malvern-title-span2::before {
+    right: -30px;
+    width: 4px;
+    height: 4px;
+}
+.about-title-span2::after, .explore-malvern-title-span2::after {
+    right: -30px;
+    width: 20px;
+    height: 1px;
+}
+  /* About us Style End  */
+
+
+  /* footer style start  */
+  .footer-top-wrapper {
+    padding: 40px 20px 30px 20px !important;
+}
+.footer-logo p {
+  font-size: 12px;
+  line-height: 18px;
+}
+.twitter img, .facebook img, .instagram img {
+  width: 20px;
+  height: 15px;
+}
+.twitter, .facebook, .instagram {
+  width: 40px;
+  height: 40px;
+}
+.footer-services-list li a, .footer-company-list li a {
+  font-size: 12px;
+}
+.footer-contact-address {
+  font-size: 14px;
+  line-height: 24px;
+}
+.footer-top-left-content {
+  max-width: 324px;
+  min-width: 0;
+  width: 100%;
+}
+.footer-top-center-column1 {
+  max-width: 106px;
+  min-width: 0;
+  width: 100%;
+}
+.footer-top-center-column2 {
+  max-width: 156px;
+  min-width: 0;
+  width: 100%;
+}
+.footer-top-right-content {
+  max-width: 222px;
+  min-width: 0;
+  width: 100%;
+}
+  /* footer style end  */
+
 }
 
 /* Medium devices (landscape tablets, 768px and up)  */
@@ -180,6 +289,15 @@
   .transparent-border::before {
     width: 0;
   }
+  .testimonials-card {
+    gap: 12px;
+  }
+  .testimonials-card-content {
+    gap: 8px;
+}
+.testimonials-wrapper {
+  padding: 60px 40px 70px 40px !important;
+}
   /* Testimonials style end  */
 
 
@@ -190,7 +308,21 @@
 /* Large devices (laptops/desktops, 992px and up)  */
 
 @media only screen and (max-width: 991px) {
-  
+  .footer-top-wrapper {
+    gap: 24px;
+    grid-template-areas: "a a a a"
+                         "b b c c"
+                         "d d d d" ;
+  }
+  .footer-top-center-column1, .footer-top-center-column2, .footer-top-right-content {
+    gap: 10px;
+}
+.footer-services-list, .footer-company-list{
+  gap: 6px;
+}
+.footer-contact-number {
+  gap: 10px;
+}
 }
 
 

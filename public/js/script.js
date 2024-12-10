@@ -51,7 +51,7 @@ function hide() {
   }
 
 
-  const btn = document.querySelector('.button-primary'); 
+  const btn = document.querySelector('.button-primary-hover'); 
   //console.log(btn)
   btn.addEventListener('mousemove', function(e) {
     const rect = btn.getBoundingClientRect();

@@ -366,11 +366,22 @@ text-underline-offset: 19.5%; /* 3.12px */
   overflow: hidden;
   position: relative;
 }
+.button-primary-hover{
+  padding: 14px 24px !important;
+  color: var(--white);
+  font-weight: 500 !important;
+  letter-spacing: -0.17px;
+  background-color: var(--light-blue);
+  border: none;
+  border-radius: 100px;
+  overflow: hidden;
+  position: relative;
+}
 .z-index-100 {
   z-index: 100;
   position: relative;
 }
-.button-primary::before{
+.button-primary-hover::before{
   content: "";
   position: absolute;
   top: var(--y);
@@ -383,7 +394,7 @@ text-underline-offset: 19.5%; /* 3.12px */
   transition: width 0.5s,height 0.5s;
   color: var(--light-blue);
 }
-.button-primary:hover::before{
+.button-primary-hover:hover::before{
  width: 1000px;
  height: 1000px;
  color: var(--light-blue) !important;

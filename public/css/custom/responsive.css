@@ -39,6 +39,9 @@
     font-size: 18px;
     line-height: normal;
   }
+  .wm-h-4{
+    font-size: 18px;
+  }
   .wm-text-sm{
     font-size: 12px;
     line-height: 15px;
@@ -80,7 +83,7 @@
  .choose-taxi-section{
   padding: 40px 0px !important;
  }
- .choose-dsc {
+ .choose-dsc, .choose-us-dsc {
   max-width: 277px;
  }
  .car-card{
@@ -188,6 +191,18 @@ line-height: 24px;
   width: 18px;
   height: 18px;
 }
+.advance-section{
+  padding: 64px 0px !important;
+}
+.advance-span{
+  display: block;
+}
+.advance-section-dsc {
+  margin-bottom: 10px !important;
+}
+.advance-booking-btn{
+  padding: 8px 16px !important;
+} 
 }
 
 /* Medium devices (landscape tablets, 768px and up)  */

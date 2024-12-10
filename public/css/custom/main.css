@@ -57,6 +57,9 @@ ul {
   padding: 0 !important;       
   margin: 0 !important; 
 }
+.opacity-80{
+  opacity: 0.8;
+}
 /* ============ Typography Classes ============ */
 .wm-h-1 {
   font-size: 58px;

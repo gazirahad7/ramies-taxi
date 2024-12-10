@@ -284,7 +284,6 @@ ul {
   position: fixed !important; /* Makes it sticky */
   top: 0;
   z-index: 1000; 
-
    background: var(--dark-blue);
    width: 100%;
    padding: 16px 0px !important;

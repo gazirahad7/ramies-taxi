@@ -143,14 +143,17 @@
   font-size: 14px;
   line-height: 18px;
 }
+.testimonials-card-img {
+  width: 64px;
+  height: 64px;
+}
+.testimonials-card-img img {
+  width: 32px;
+  height: 32px;
+}
   /* Testimonials style End  */
 
   /* About us Style Start  */
-  .about-us-wrapper, .explore-malvern-wrapper {
-    flex-direction: column;
-    gap: 24px;
-    padding: 40px !important;
-}
 .about-us-right-content {
   padding-right: 0 !important;
 }
@@ -192,7 +195,56 @@
     width: 20px;
     height: 1px;
 }
-  /* About us Style End  */
+.about-us-right-content {
+  gap: 10px;
+}
+.about-learn-more-btn {
+  margin-top: 5px !important;
+}
+.about-us-left-content {
+  padding: 12px 0 12px 12px !important;
+}
+.about-us-left-content img, .explore-malvern-right-content img {
+  min-height: 285px;
+}
+/* About us Style End  */
+
+
+/* Explore-malvern style start  */
+.explore-malvern-features p {
+  font-size: 12px;
+  line-height: 18px;
+}
+.explore-malvern-left-content {
+  padding-right: 0 !important;
+}
+.explore-malvern-right-content {
+  padding: 12px 12px 12px 0 !important;
+}
+/* Explore-malvern style end  */
+
+/* Advance booking start  */
+.advance-booking-title h2 {
+  font-size: 20px;
+  line-height: 21px;
+}
+.advance-booking-title p {
+  font-size: 12px;
+  line-height: 16px;
+}
+.advance-booking-btn button {
+  font-size: 12px;
+  line-height: 15px;
+  padding: 8px 16px !important;
+  gap: 4px;
+}
+.advance-booking-title {
+  gap: 8px;
+}
+.advance-booking-wrapper {
+  gap: 10px;
+}
+/* Advance booking end  */
 
 
   /* footer style start  */
@@ -256,12 +308,11 @@
     flex-direction: column;
     position: absolute;
     top: 60px;
-    right: 20px;
-    background-color: #333;
-    width: 200px;
-    border-radius: 5px;
+    right: 0;
+    background-color: var(--darker-blue);
+    width: 100%;
     z-index: 100;
-  }
+}
 
   .navbar.active {
       display: flex;
@@ -270,11 +321,15 @@
   .nav-list {
       flex-direction: column;
       text-align: center;
+      gap: 15px;
   }
 
   .nav-list li {
       margin: 10px 0 !important;
   }
+  .nav-list a {
+    font-size: 14px;
+}
 
   .hamburger {
       display: flex;
@@ -300,7 +355,21 @@
 }
   /* Testimonials style end  */
 
-
+  /* About us style start  */
+  .about-us-wrapper{
+    flex-direction: column;
+    gap: 24px;
+    padding: 40px !important;
+  }
+  .explore-malvern-wrapper {
+    flex-direction: column-reverse;
+    gap: 24px;
+    padding: 40px !important;
+}
+.explore-malvern-desc span {
+  margin-top: 15px !important;
+}
+  /* About us style end  */
 }
 
 
@@ -308,21 +377,33 @@
 /* Large devices (laptops/desktops, 992px and up)  */
 
 @media only screen and (max-width: 991px) {
+  /* header style start  */
+  .nav-list a {
+    font-size: 14px;
+}
+.nav-list {
+  gap: 15px;
+}
+  /* header style end  */
+
+
+  /* footer style start  */
   .footer-top-wrapper {
     gap: 24px;
     grid-template-areas: "a a a a"
-                         "b b c c"
-                         "d d d d" ;
+    "b b c c"
+    "d d d d" ;
   }
   .footer-top-center-column1, .footer-top-center-column2, .footer-top-right-content {
     gap: 10px;
-}
-.footer-services-list, .footer-company-list{
-  gap: 6px;
-}
-.footer-contact-number {
-  gap: 10px;
-}
+  }
+  .footer-services-list, .footer-company-list{
+    gap: 6px;
+  }
+  .footer-contact-number {
+    gap: 10px;
+  }
+  /* footer style end  */
 }
 
 

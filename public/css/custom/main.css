@@ -141,6 +141,10 @@ body {
 /* Header Styles start  */
 .header {
   background-color: var(--darker-blue);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
 }
 .header-phone {
   display: flex;
@@ -209,6 +213,7 @@ body {
 #hero {
   position: relative;
   z-index: -2;
+  margin-top: 61px !important;
 }
 #hero::before {
   content: "";
@@ -367,6 +372,7 @@ body {
 }
 .gallery-card {
   background-color: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.12);
 }
 .gallery-card-desc {
   display: flex;
@@ -709,6 +715,9 @@ border-radius: 50%;
   padding-right: 70px !important;
   max-width: 618px;
 }
+.explore-malvern-desc span {
+  display: block;
+}
 /* Explore-Malvern Style end  */
 
 
@@ -751,6 +760,7 @@ border-radius: 50%;
   letter-spacing: -1%;
   text-align: center;
   opacity: 80%;
+  font-style: italic;
 }
 .advance-booking-btn button {
   font-size: 17px;

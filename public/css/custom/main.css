@@ -141,7 +141,7 @@ ul {
   color: white;
 }
 .responsive-navbar {
-  display: none;
+  display: none !important;
   background-color: var(--dark-blue);
   padding: 15px !important;
   border-radius: 0 0 10px 10px;
@@ -363,6 +363,30 @@ text-underline-offset: 19.5%; /* 3.12px */
   background-color: var(--light-blue);
   border: none;
   border-radius: 100px;
+  overflow: hidden;
+  position: relative;
+}
+.z-index-100 {
+  z-index: 100;
+  position: relative;
+}
+.button-primary::before{
+  content: "";
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  transform: translate(-50%,-50%);
+  height: 0;
+  width: 0;
+  border-radius: 50%;
+  background:var(--dark-blue);
+  transition: width 0.5s,height 0.5s;
+  color: var(--light-blue);
+}
+.button-primary:hover::before{
+ width: 1000px;
+ height: 1000px;
+ color: var(--light-blue) !important;
 }
 
 .choose-taxi-section{
@@ -441,6 +465,24 @@ color: var(--darkar-gray);
 
 .button-secondary {
   background-color: var(--dark-blue);
+  position: relative;
+}
+.button-secondary::before{
+  content: "";
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  transform: translate(-50%,-50%);
+  height: 0;
+  width: 0;
+  border-radius: 50%;
+  background:var(--light-blue);
+  transition: width 0.5s,height 0.5s;
+}
+.button-secondary:hover::before{
+ width: 1000px;
+ height: 1000px;
+ color: var(--light-blue) !important;
 }
 
 /* choose us section */

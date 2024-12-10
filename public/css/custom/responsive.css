@@ -161,9 +161,32 @@ line-height: 24px;
 }
 .discover-img-container {
   width: 100% !important;
+  padding: 11px !important;
 }
 .discover-img{
   min-height: 335px;
+}
+.discover-section {
+  padding: 40px 23px !important;
+}
+.discover-dsc{
+  font-size: 12px !important;
+  line-height: 130% !important;
+  letter-spacing: -0.12px;
+  margin-bottom: 15px !important;
+}
+.discover-dsc-span {
+  margin-top: 16px !important;
+  font-weight: 400 !important;
+  font-style: normal;
+  color: #2C2C2C;
+}
+.discover-checkmark-text {
+  font-size: 12px;
+}
+.responsive-checkmark{
+  width: 18px;
+  height: 18px;
 }
 }
 

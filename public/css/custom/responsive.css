@@ -386,6 +386,12 @@
 }
   /* header style end  */
 
+  /* testimonials style start  */
+  .explore-malvern-left-content {
+    padding-right: 0 !important;
+}
+  /* testimonials style end   */
+
 
   /* footer style start  */
   .footer-top-wrapper {

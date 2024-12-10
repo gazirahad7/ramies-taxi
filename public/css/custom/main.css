@@ -2,6 +2,7 @@
   /* Colors variable */
   --black: rgb(0, 0, 0);
   --light-black: rgba(2, 14, 40, 1);
+  --lighter-black: rgba(31, 38, 41, 1);
 
   --darker-blue: rgba(37, 57, 147, 1);
   --dark-blue: rgba(81, 112, 255, 1);
@@ -598,6 +599,9 @@ body {
   min-height: 514px;
   height: 100%;
 }
+.explore-malvern-right-content img {
+  min-width: 350px;
+}
 .about-us-wrapper, .explore-malvern-wrapper {
   display: flex;
   gap: 48px;
@@ -731,6 +735,9 @@ border-radius: 50%;
 }
 .explore-malvern-desc span {
   display: block;
+  font-style: italic;
+  color: var(--lighter-black);
+  font-weight: 500;
 }
 /* Explore-Malvern Style end  */
 

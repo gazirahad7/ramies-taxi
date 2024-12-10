@@ -131,6 +131,51 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
 }
+#toggleButton{
+  border: none !important;
+  background: none !important;
+  font-size: 28px;
+  color: white;
+}
+.responsive-navbar {
+  display: none;
+  background-color: var(--dark-blue);
+  padding: 15px !important;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+.responsive-navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.responsive-navbar li {
+  font-size: 16px;
+  padding: 12px 0 !important;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.responsive-navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  display: inline-block;
+}
+.wm-responsive-block{
+  display: none !important;
+}
+.wm-responsive-hidden{
+  display: flex !important;
+}
 /* ======= Spacing classes   ====== */
 .wm-gap-24{
   gap: 24px;
@@ -232,14 +277,14 @@ ul {
   height: 73px;
   width: 100%;
 }
-.test{
+.navbar-fixed{
   position: fixed !important; /* Makes it sticky */
   top: 0;
   z-index: 1000; 
+
    background: var(--dark-blue);
-   height: 73px;
    width: 100%;
-   padding: 16px 120px !important;
+   padding: 16px 0px !important;
 
 }
 .nav-ul{
@@ -253,7 +298,7 @@ text-underline-offset: 19.5%; /* 3.12px */
 }
 /* hero section */
 .hero-wrapper{
-  max-width: 578px;
+  max-width: 578px !important;
 }
 .hero-section{
   padding: 121px 0px !important;
@@ -365,6 +410,7 @@ text-underline-offset: 19.5%; /* 3.12px */
 background: #FFF;
   gap: 40px;
   padding-bottom: 40px !important;
+  margin-bottom: 40px !important;
 }
 .card-title{
   color: var(--darker-blue);

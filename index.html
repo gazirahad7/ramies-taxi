@@ -24,30 +24,53 @@
   <body>
     <header>
       <nav class="navbar">
-        <div class="test">
- <div class="container d-flex align-items-center justify-content-between ">
-          <!-- logo -->
-          <div>
-            <img src="./public/image/logo.png" alt="logo" />
+        <div class="navbar-fixed">
+          <div
+            class="container d-flex align-items-center justify-content-between"
+          >
+            <!-- logo -->
+            <div>
+              <img src="./public/image/logo.png" alt="logo" />
+            </div>
+            <!-- nav-right -->
+            <ul class="wm-gap-24 nav-ul wm-text-sm wm-responsive-hidden">
+              <li class="hover-underline"><a href="">Home</a></li>
+              <li class="hover-underline"><a href="">About</a></li>
+              <li class="hover-underline"><a href="">Our Services</a></li>
+              <li class="hover-underline"><a href="">Case Study</a></li>
+            </ul>
+            <div class="d-flex align-items-center gap-1">
+              <button
+                id="toggleButton"
+                class="responsive-block wm-responsive-block"
+              >
+                <img src="./public/icons/hamburger.svg" alt="" />
+              </button>
+              <img
+                class="wm-responsive-hidden"
+                src="./public/icons/telephone.svg"
+                alt="telephone"
+              />
+              <p
+                class="fst-italic text-decoration-underline text-white nav-number wm-responsive-hidden"
+              >
+                +900 4440053546
+              </p>
+            </div>
           </div>
-          <!-- nav-right -->
-          <ul class="d-flex wm-gap-24 nav-ul wm-text-sm">
-            <li class="hover-underline"><a href="">Home</a></li>
-            <li class="hover-underline"><a href="">About</a></li>
-            <li class="hover-underline"><a href="">Our Services</a></li>
-            <li class="hover-underline"><a href="">Case Study</a></li>
-          </ul>
-          <div class="d-flex align-items-center gap-1">
-            <img src="./public/icons/telephone.svg" alt="telephone" />
-            <p
-              class="fst-italic text-decoration-underline text-white nav-number"
-            >
-              +900 4440053546
-            </p>
+          <div
+            class="responsive-navbar wm-responsive-block"
+            id="responsive-navbar"
+          >
+            <ul class="responsive-ul d-flex flex-column">
+              <li class="hover-underline"><a href="">Home</a></li>
+              <li class="hover-underline"><a href="">About</a></li>
+              <li class="hover-underline"><a href="">Our Services</a></li>
+              <li class="hover-underline"><a href="">Case Study</a></li>
+            </ul>
           </div>
         </div>
-        </div>
-       
+        <!-- responsive button -->
       </nav>
     </header>
     <main>
@@ -63,9 +86,9 @@
         "
         class="hero-section wm-background-image wm-text-center d-flex justify-content-center"
       >
-        <div class="wm-text-center hero-wrapper">
+        <div class="wm-text-center container hero-wrapper">
           <p
-            class="mb-3 hero-top-title wm-text-sm d-flex align-items-center gap-2 justify-content-center"
+            class="mb-2 mb-xl-3 hero-top-title wm-text-sm d-flex align-items-center gap-2 justify-content-center"
           >
             <span class="gradient-line-left"></span> Welcome to Ramies Taxis
             <span class="gradient-line-right"></span>
@@ -76,7 +99,7 @@
             <br />
             <span class="hero-title-span">an Experience!</span>
           </h1>
-          <p class="hero-dsc mt-4 mb-4 wm-text-normal">
+          <p class="hero-dsc mt-xl-4 mb-xl-4 wm-text-normal">
             Proud to be the most trusted Malvern taxi company that sets the
             standards with our convenient, reliable, and safe taxi services.
             With a sizable fleet of well-maintained taxis, we provide
@@ -100,7 +123,7 @@
         <div
           class="d-flex justify-content-center align-items-center flex-column"
         >
-          <h2 class="wm-text-center choose-title wm-h-2 mb-3">
+          <h2 class="wm-text-center choose-title wm-h-2 mb-2 mb-xl-3">
             Choose Taxi to Ride
           </h2>
           <p class="wm-text-center wm-text-sm choose-dsc">
@@ -827,8 +850,8 @@
             <img src="./public/image/logo.png" alt="logo" />
           </div>
           <p class="wm-text-sm footer-left-dsc">
-            There are many variations of passages of <br> Lorem the Ipsum available
-            it majority.
+            There are many variations of passages of <br />
+            Lorem the Ipsum available it majority.
           </p>
           <div class="d-flex align-items-center gap-4">
             <button class="social-icon-one">
@@ -843,49 +866,55 @@
           </div>
         </div>
         <!-- footer middle -->
-         <div class="">
-            <div class="d-flex align-items-center wm-gap-130">
-                <div>
-                    <p class="footer-title">Services</p>
-                    <ul class="d-flex flex-column gap-3 text-white wm-text-sm">
-                        <li>Hyundai 2022</li>
-                        <li>Hyundai 2022</li>
-                        <li>Hyundai 2022</li>
-                        <li>Hyundai 2022</li>
-                    </ul>
-                </div>
-                <div>
-                    <p class="footer-title">Company</p>
-                    <ul class="d-flex flex-column gap-3 text-white">
-                        <li>Payment Plans</li>
-                        <li>Make saving More</li>
-                        <li>Tax Calculator</li>
-                        <li>Talk To Us</li>
-                    </ul>
-                </div>
-            </div>
-         </div>
-         <!-- footer end -->
-          <div class="">
+        <div class="">
+          <div class="d-flex align-items-center wm-gap-130">
             <div>
-                <p class="footer-title">Services</p>
-                <p class="wm-text-sm text-white">Malvern, Worcestershire <br> WR14 1TF, UK</p>
+              <p class="footer-title">Services</p>
+              <ul class="d-flex flex-column gap-3 text-white wm-text-sm">
+                <li>Hyundai 2022</li>
+                <li>Hyundai 2022</li>
+                <li>Hyundai 2022</li>
+                <li>Hyundai 2022</li>
+              </ul>
             </div>
-            <div class="d-flex align-items-center gap-1 footer-number">
-                <img src="./public/icons/phone.svg" alt="phone">
-                <p class="text-white wm-text-sm">+088 (246) 642-27-10</p>
-            </div>
-            <div class="d-flex align-items-center gap-1">
-                <img src="./public/icons/whatsapp.svg" alt="phone">
-                <p class="text-white wm-text-sm">+088 (246) 642-27-10</p>
+            <div>
+              <p class="footer-title">Company</p>
+              <ul class="d-flex flex-column gap-3 text-white">
+                <li>Payment Plans</li>
+                <li>Make saving More</li>
+                <li>Tax Calculator</li>
+                <li>Talk To Us</li>
+              </ul>
             </div>
           </div>
+        </div>
+        <!-- footer end -->
+        <div class="">
+          <div>
+            <p class="footer-title">Services</p>
+            <p class="wm-text-sm text-white">
+              Malvern, Worcestershire <br />
+              WR14 1TF, UK
+            </p>
+          </div>
+          <div class="d-flex align-items-center gap-1 footer-number">
+            <img src="./public/icons/phone.svg" alt="phone" />
+            <p class="text-white wm-text-sm">+088 (246) 642-27-10</p>
+          </div>
+          <div class="d-flex align-items-center gap-1">
+            <img src="./public/icons/whatsapp.svg" alt="phone" />
+            <p class="text-white wm-text-sm">+088 (246) 642-27-10</p>
+          </div>
+        </div>
       </div>
       <!-- disclaimer -->
-       <div>
-        <p class="disclaimer wm-text-center wm-text-sm">© 2024 Webermelon All Rights Reserved</p>
-       </div>
+      <div>
+        <p class="disclaimer wm-text-center wm-text-sm">
+          © 2024 Webermelon All Rights Reserved
+        </p>
+      </div>
     </footer>
+    <script src="./public/js/script.js"></script>
     <script src="./public/css/lib/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
@@ -895,6 +924,23 @@
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
+        },
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+          },
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
         },
       });
     </script>

@@ -4,7 +4,6 @@
 
 @media only screen and (max-width: 600px) {
   /* =======  Modify default CSS   ====== */
-
   .w-50,
   .w-25,
   .w-75 {
@@ -14,9 +13,72 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up)  */
 @media only screen and (max-width: 600px) {
-  body {
+  /* body {
     background-color: red;
+  } */
+   /* global classes */
+   .container {
+    max-width: 343px !important;
   }
+  .wm-responsive-block{
+    display: flex !important;
+  }
+  .wm-responsive-hidden{
+    display: none !important;
+  }
+   .wm-h-1{
+    font-size: 26px;
+    line-height: 32.45px;
+    font-weight: 400;
+  }
+  .wm-h-2{
+    font-size: 20px;
+    line-height: normal;
+  }
+  .wm-text-sm{
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+  }
+  .wm-text-normal {
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+  }
+   .navbar-fixed {
+    max-width: 100vw;
+   }
+   .navbar{
+    max-width: 100vw;
+   }
+
+  .hero-section{
+    padding: 70px 0px !important;
+  }
+  .hero-title-span{
+    font-weight: 600;
+  }
+  .hero-title{
+    letter-spacing: -0.52px;
+  }
+  .hero-title-span::before {
+    top: 2px;
+    width: 116%;
+    height: 100%;
+}
+ .hero-dsc{
+  letter-spacing: -0.12px;
+  margin: 16px 0px 18px 0px !important;
+ }
+ .button-primary{
+  padding: 8px 12px !important;
+ }
+ .choose-taxi-section{
+  padding: 40px 0px !important;
+ }
+ .choose-dsc {
+  max-width: 277px;
+ }
 }
 
 /* Medium devices (landscape tablets, 768px and up)  */

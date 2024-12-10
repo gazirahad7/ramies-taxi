@@ -517,6 +517,9 @@ line-height: 24px;
 .hero-wrapper {
   max-width: 578px !important;
 }
+.card-img {
+  height: 214px;
+}
 }
 
 /* 1200px and up default value   */

@@ -19,6 +19,7 @@
     --white: rgb(255, 255, 255);
     --primary-color: #090909;
     --secondary-color:  #42A5F5;
+    --gray-bg: #DFE2EA;
     /* font family variable */
   
     --font-1: "Inter Display";
@@ -36,4 +37,90 @@
     color: var(--off-white);
     max-width: 655px;
     margin-bottom: 40px !important;
+    opacity: 0.86;
 }
+.contact-us-advance-title{
+    line-height: 46px !important;
+    color: var(--white);
+    letter-spacing: -0.8px;
+}
+.discover-img-container {
+    position: relative;
+    padding: 20px 0px 20px 20px !important;
+    border-radius: 3px;
+    overflow: hidden; 
+    width: 47.5% !important;
+  }
+  .discover-img-container-bottom {
+    padding: 20px 20px 20px 0px !important;
+  }
+  .discover-img-wrapper {
+    position: relative !important;
+    display: inline-block;
+    width: fit-content;
+  }
+  
+  .discover-img {
+    display: block !important;
+    width: 100%; 
+    height: 100%;
+    min-height: 567px; 
+  }
+  
+  .discover-img-wrapper::before {
+    content: '';
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(170deg, #5267C5 -66.34%, rgba(8, 17, 60, 0) 128.58%);
+    pointer-events: none; 
+    z-index: 3;
+  }
+
+  .get-in-title{
+    color: var(--darker-blue);
+font-size: 40px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -0.8px;
+  }
+  .get-in-dsc{
+    color: var(--light-black);
+    letter-spacing: -0.16px;
+    margin-bottom: 40px !important;
+  }
+  .logo-title{
+    font-family: Roboto;
+    color: var(--darker-blue);
+  }
+  .logo-dsc {
+    font-weight: 600 !important;
+    color: var(--darker-blue);
+    font-size: 18px !important;
+  }
+  .logo-img-container{
+    padding: 17.5px !important;
+    background: var(--gray-bg);
+    border-radius: 50%;
+  }
+  .logo-img-container{
+    width: 19% !important; /* Ensure it doesn't overflow its container */
+  }
+  .wm-margin-bottom-40{
+    margin-bottom: 40px !important;
+  }
+  .social-icon-container{
+    margin-bottom: 64px !important;
+  }
+  .social-icon-blue{
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    border: 2px solid var(--dark-blue);
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+  }

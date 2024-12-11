@@ -60,12 +60,34 @@ function hide() {
     btn.style.setProperty('--x', x + 'px');
     btn.style.setProperty('--y', y + 'px');
   });
-  // const btnOne = document.querySelector('.button-secondary'); 
-  // //console.log(btn)
-  // btnOne.addEventListener('mousemove', function(e) {
-  //   const rect = btnOne.getBoundingClientRect();
-  //   const x = e.clientX - rect.left; 
-  //   const y = e.clientY - rect.top;  
-  //   btnOne.style.setProperty('--x', x + 'px');
-  //   btnOne.style.setProperty('--y', y + 'px');
-  // });
+  const buttons = document.querySelectorAll('.button-secondary'); 
+
+  buttons.forEach((btn) => {
+    btn.addEventListener('mousemove', function(e) {
+      const rect = btn.getBoundingClientRect();
+      const x = e.clientX - rect.left; 
+      const y = e.clientY - rect.top;  
+      btn.style.setProperty('--x', x + 'px');
+      btn.style.setProperty('--y', y + 'px');
+    });
+  });
+  const btnOne = document.querySelector('.advance-booking-btn');  
+  btnOne.addEventListener('mousemove', function(e) {
+    const rect = btnOne.getBoundingClientRect();
+    const x = e.clientX - rect.left; 
+    const y = e.clientY - rect.top;  
+    btnOne.style.setProperty('--x', x + 'px');
+    btnOne.style.setProperty('--y', y + 'px');
+  });
+
+  const socialButtons = document.querySelectorAll('.social-icon'); 
+
+  socialButtons.forEach((btn) => {
+    btn.addEventListener('mousemove', function(e) {
+      const rect = btn.getBoundingClientRect();
+      const x = e.clientX - rect.left; 
+      const y = e.clientY - rect.top;  
+      btn.style.setProperty('--x', x + 'px');
+      btn.style.setProperty('--y', y + 'px');
+    });
+  });

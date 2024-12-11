@@ -1,0 +1,39 @@
+:root {
+    /* Colors variable */
+    --black: rgb(0, 0, 0);
+    --lighter-black:#1F2629;
+    --light-black:#2C2C2C;
+    --darkest-blue:#141628;
+    --darker-blue:  #020E28;
+    --blue:#2B59FF;
+    --dark-blue: #253993;
+    --light-blue: #5170FF;
+    --lighter-blue: rgb(180, 220, 255);
+    --darkar-gray:#686868;
+    --dark-gray: #536169;
+    --gray: #D7D8D9;
+    --light-gray: #E8ECFF;
+    --lighter-gray: #F4F5F8;
+    --lightest-gray:#D4D4D8;
+    --off-white: #F5F7FF;
+    --white: rgb(255, 255, 255);
+    --primary-color: #090909;
+    --secondary-color:  #42A5F5;
+    /* font family variable */
+  
+    --font-1: "Inter Display";
+    --font-2: ;
+    --font-3: ;
+    --font-body: "Inter", sans-serif;
+  
+    /* UI element  variable */
+  }
+  
+.contact-section{
+    padding: 171px 0px !important;
+}
+.contact-us-advance-dsc{
+    color: var(--off-white);
+    max-width: 655px;
+    margin-bottom: 40px !important;
+}

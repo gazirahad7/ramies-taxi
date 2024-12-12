@@ -124,6 +124,23 @@
     font-size: 12px;
     line-height: 16px;
   }
+  .gallery-card-feature p {
+    font-size: 14px;
+    line-height: 17px;
+}
+.gallery-taxi-booking-btn button {
+  padding: 8px 22px !important;
+  font-size: 12px;
+  line-height: 16px;
+}
+.gallery-card-title h4 {
+  font-size: 18px;
+  line-height: 22px;
+}
+.gallery-card-title h5 {
+  font-size: 13px;
+  line-height: 16px;
+}
   /* Gallery style End  */
 
   /* Testimonials style start  */
@@ -221,6 +238,9 @@
 .explore-malvern-right-content {
   padding: 12px 12px 12px 0 !important;
 }
+.explore-malvern-right-content img {
+  min-width: 200px;
+}
 /* Explore-malvern style end  */
 
 /* Advance booking start  */
@@ -243,6 +263,7 @@
 }
 .advance-booking-wrapper {
   gap: 10px;
+  padding: 70px 20px !important;
 }
 /* Advance booking end  */
 
@@ -336,6 +357,14 @@
   }
   /* header style end  */
 
+  /* hero style start  */
+  #hero {
+    position: relative;
+    z-index: 0;
+    margin-top: 61px !important;
+  }
+  /* hero style end  */
+  
 
   /* Testimonials style start  */
   .testimonials-bottom-content {

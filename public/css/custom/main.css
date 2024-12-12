@@ -130,6 +130,13 @@ body {
   border-radius: 90px;
   outline: none;
   border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.button-primary:hover {
+  color: var(--white);
+  background-color: var(--dark-blue);
+  transform: scale(1.05);
 }
 /* ======= Spacing classes   ====== */
 /* ======= component based classes   ====== */
@@ -213,8 +220,8 @@ body {
 /* hero Styles start  */
 #hero {
   position: relative;
-  z-index: -2;
-  margin-top: 61px !important;
+  z-index: 0;
+  margin-top: 73px !important;
 }
 #hero::before {
   content: "";
@@ -223,8 +230,9 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(2px);
   z-index: -1;
+  background: radial-gradient(rgba(0, 5, 26, 0.35), rgba(0, 5, 26, 0.35));
 }
 .hero-wrapper {
   padding: 124px 0 !important;
@@ -335,6 +343,13 @@ body {
   gap: 6px;
   color: var(--white);
   border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+.hero-btn button:hover {
+  color: var(--white);
+  background-color: var(--darker-blue);
+  transform: scale(1.05);
 }
 /* Hero style end  */
 
@@ -421,7 +436,6 @@ body {
 .gallery-taxi-booking-btn button {
   display: flex;
   padding: 14px 24px !important;
-  width: 200px;
   font-size: 17px;
   line-height: 20px;
   font-weight: 500;
@@ -815,7 +829,6 @@ border-radius: 50%;
 
 
 
-
 /* footer Style start  */
 footer {
   background-color: rgba(20, 22, 40, 1);
@@ -933,3 +946,8 @@ footer {
   line-height: 24px;
 }
 /* footer Style End  */
+
+
+
+
+

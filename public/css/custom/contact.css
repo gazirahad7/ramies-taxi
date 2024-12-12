@@ -1,0 +1,253 @@
+:root {
+    /* Colors variable */
+    --black: rgb(0, 0, 0);
+    --light-black: rgba(2, 14, 40, 1);
+    --lighter-black: rgba(31, 38, 41, 1);
+  
+    --darker-blue: rgba(37, 57, 147, 1);
+    --dark-blue: rgba(81, 112, 255, 1);
+    --light-blue: rgb(13, 100, 176);
+    --lighter-blue: rgb(180, 220, 255);
+  
+    --darker-gray: rgba(44, 44, 44, 1);
+    --gray: rgba(83, 97, 105, 1);
+    --light-gray: rgba(104, 104, 104, 1);
+    --lighter-gray: rgba(215, 216, 217, 1);
+  
+    --light-off-white: rgba(232, 236, 255, 1);
+    --off-white: rgba(244, 245, 248, 1);
+    --white: rgb(255, 255, 255, 1);
+  
+    --primary-color: #090909;
+    --secondary-color: #f8ce44;
+    /* font family variable */
+  
+    --font-1: ;
+    --font-2: ;
+    --font-3: ;
+    --font-body: "Inter", sans-serif;
+  
+    /* UI element  variable */
+  }
+  
+
+.contact-hero-wrapper {
+    padding: 170px 0 !important;
+    color: var(--white);
+    margin: 0 !important;
+}
+.contact-hero-title {
+    font-size: 58px;
+    line-height: 66px;
+    font-weight: 600;
+}
+
+
+
+
+.advance-booking-wrapper {
+    max-width: 655px;
+    margin: 0 auto !important;
+}
+.advance-booking-title h2 {
+    letter-spacing: -1px;
+}
+
+.explore-malvern-wrapper {
+    display: flex;
+    gap: 48px;
+    padding: 130px 0 !important;
+}
+.contact-left-heading h3 {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 600;
+    color: var(--light-black);
+}
+.contact-left-heading p {
+    line-height: 22px;
+    color: var(--darker-gray);
+}
+.contact-card {
+
+}
+.contact-card p {
+    color: var(--light-black);
+}
+.contact-card h5 {
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--light-black);
+    font-weight: 600;
+}
+
+.contact-card-img {
+    min-width: 65px;
+    min-height: 65px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(223, 226, 234, 1);
+}
+.contact-card-img img {
+    width: 21px;
+    height: 21px;
+}
+.contact-info-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+    column-gap: 24px;
+}
+
+.contact-socials-title h3 {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 600;
+    color: var(--light-black);
+}
+
+.contact-socials-title p {
+    line-height: 22px;
+    color: var(--darker-gray);
+}
+
+
+.contact-socials {
+    gap: 28px;
+}
+.twitter, .facebook, .instagram {
+    border: 2.5px solid rgba(57, 83, 201, 1);
+    width: 65px;
+    height: 65px;
+}
+.contact-left-top {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contact-info-left {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    justify-content: space-between;
+}
+.contact-left-bottom {
+    gap: 40px;
+}
+.explore-malvern-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+    padding: 130px 0 !important;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .contact-hero-title {
+    font-size: 26px;
+    line-height: 31px;
+    text-align: center;
+  }
+  .contact-hero-wrapper {
+    padding: 50px 0 !important;
+}
+.contact-info-right {
+    width: 100%;
+}
+.contact-left-heading {
+    text-align: center;
+}
+.contact-left-heading h3 {
+    font-size: 20px;
+    line-height: 24px;
+}
+.contact-left-heading p {
+    font-size: 12px;
+    line-height: 16px;
+}
+.contact-left-top {
+    gap: 24px;
+}
+.contact-card-img {
+    min-width: 40px;
+    min-height: 40px;
+    width: 40px;
+    height: 40px;
+}
+.contact-card-img img {
+    width: 15px;
+    height: 15px;
+}
+.contact-card p {
+    font-size: 12px;
+    line-height: 18px;
+}
+.contact-card h5 {
+    font-size: 15px;
+    line-height: 24px;
+}
+.contact-address h5 {
+    line-height: 18px;
+}
+.contact-info-cards {
+    row-gap: 16px !important;
+}
+.contact-socials-title h3 {
+    font-size: 20px;
+    line-height: 24px;
+}
+.contact-socials-title p {
+    font-size: 12px;
+    line-height: 16px;
+}
+.twitter, .facebook, .instagram {
+    width: 50px !important;
+    height: 50px !important;
+}
+.twitter img, .facebook img, .instagram img {
+    width: 25px !important;
+    height: 20px !important;
+}
+.contact-socials {
+    gap: 0;
+    padding: 0 30px !important;
+    justify-content: space-between;
+}
+.contact-info-left {
+    gap: 32px;
+}
+.contact-left-bottom {
+    gap: 32px;
+}
+.contact-socials-title {
+    text-align: center;
+}
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .explore-malvern-wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 48px;
+        padding: 130px 0 !important;
+    }
+    .contact-info-left {
+        grid-row: 2;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .explore-malvern-right-content img {
+        min-width: 200px;
+    }
+    .contact-info-cards {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 10px;
+    }
+}

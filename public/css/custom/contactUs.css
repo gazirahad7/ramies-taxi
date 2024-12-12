@@ -104,8 +104,11 @@ letter-spacing: -0.8px;
   .logo-img-container{
     padding: 17.5px !important;
     background: var(--gray-bg);
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
-    width: 19% !important;
+    width: 56px !important;
   }
   .wm-margin-bottom-40{
     margin-bottom: 40px !important;
@@ -121,6 +124,27 @@ letter-spacing: -0.8px;
     background: transparent;
     position: relative;
     overflow: hidden;
+  }
+  .social-icon-blue:hover{
+    border: 2px solid var(--light-blue);
+    transition: border 1s;
+  }
+  .social-icon-blue::before{
+    content: "";
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%,-50%);
+    height: 0;
+    width: 0;
+    border-radius: 50%;
+    background: var(--gray-bg);
+    transition: width 0.5s,height 0.5s;
+  }
+  .social-icon-blue:hover::before{
+   width: 1000px;
+   height: 1000px;
+   color: var(--light-blue) !important;
   }
 
   @media only screen and (max-width: 600px) {
@@ -154,8 +178,8 @@ letter-spacing: -0.8px;
         margin-bottom: 24px !important;
     }
     .logo-img-container{
-        padding: 12.5px !important;
-        width: 16% !important;
+        width: 40px !important;
+        height: 40px !important;
       }
       .wm-margin-bottom-40{
         margin-bottom: 0px !important;
@@ -189,5 +213,117 @@ letter-spacing: -0.8px;
         width: 85%;
         height: 100%;
         clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+    }
+  }
+  @media only screen and (min-width: 601px) and (max-width: 767px) {
+    .contact-section{
+        padding: 49px 0px !important;
+    }
+    .contact-us-title{
+        font-size: 26px !important;
+        text-align: center;
+        font-weight: 500 !important;
+    }
+    .discover-section{
+        flex-direction: column-reverse !important;
+    }
+    .discover-img-container{
+        width: 100% !important;
+        padding: 11px !important;
+    }
+    .discover-img{
+        min-height: 334px !important;
+    }
+    .discover-section{
+        padding: 24px 0px !important;
+    }
+    .get-in-title{
+        font-size: 20px !important;
+        text-align: center;
+    }
+    .get-in-dsc{
+        text-align: center;
+        margin-bottom: 24px !important;
+    }
+    .logo-img-container{
+        width: 40px !important;
+        height: 40px !important;
+      }
+      .wm-margin-bottom-40{
+        margin-bottom: 0px !important;
+      }
+      .social-icon-container{
+        gap: 16px !important;
+        margin-bottom: 32px !important;
+      }
+      .logo-dsc{
+        font-size: 15px !important;
+      }
+      .wm-responsive-margin {
+        margin-bottom: 32px !important;
+      }
+      .social-icon-blue{
+        height: 50px;
+        width: 50px;
+      }
+      .contact-us-advance-title{
+        line-height: 28px !important;
+      }
+      .contact-us-advance-dsc {
+        margin-bottom: 10px !important;
+    }
+    .responsive-padding{
+        padding: 40px 0px !important;
+    }
+    .clipped-bg-bottom{
+        top: 0;
+        left: 0;
+        width: 85%;
+        height: 100%;
+        clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .logo-dsc{
+        font-size: 12px !important;
+    }
+    .logo-title{
+        font-size: 14px;
+    }
+    .logo-img-container{
+        width: 44px !important;
+        height: 44px !important;
+    }
+    .discover-img-container{
+        width: 41.5% !important;
+    }
+    .responsive-width{
+        width: 55% !important;
+    }
+    .get-in-title{
+        font-size:32px !important;
+    }
+    .social-icon-container {
+        margin-bottom: 44px !important;
+    }
+    .discover-img {
+        min-height: 532px;
+    }
+    .discover-img-container{
+        padding: 16px 16px 16px 0px !important;
+    }
+    .social-icon-blue{
+        height: 56px !important;
+        width: 56px !important;
+    }
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px){
+    .discover-img-container {
+        width: 46.5% !important;
+    }
+    .logo-dsc {
+        font-weight: 600 !important;
+        color: var(--darker-blue);
+        font-size: 15px !important;
     }
   }

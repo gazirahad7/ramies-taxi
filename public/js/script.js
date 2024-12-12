@@ -68,9 +68,11 @@ const primaryButton = document.querySelectorAll('.button-primary-hover');
 const secondaryButtons = document.querySelectorAll('.button-secondary');
 const advanceBookingButton = document.querySelectorAll('.advance-booking-btn');
 const socialButtons = document.querySelectorAll('.social-icon');
+const socialButtonsBlue = document.querySelectorAll('.social-icon-blue');
 
 // Add effects to each group
 addMouseMoveEffect(primaryButton);
 addMouseMoveEffect(secondaryButtons);
 addMouseMoveEffect(advanceBookingButton);
 addMouseMoveEffect(socialButtons);
+addMouseMoveEffect(socialButtonsBlue)
